@@ -24,7 +24,6 @@ describe('Module 01 - Kanban Board Events - kanban.js', () => {
       'arguments.0.value': 'item'
     };
     assert(matchObj(add_class, add_class_match), 'Are you adding a class of `item` to the `item`?');
-
     const item_id = create_item.findPropertyAssignment('item', 'id');
     const item_id_match = {
       'right.type': 'BinaryExpression',
